@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+  background-color: #0c0c0c;
+  
+}
+
+.testimonial-section {
+  background-image: url(testimonials-background.jpg);
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;  
+  padding: 50px 0;  
+}
+
+
+.testimonials {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-image: url(/asset/testimonials-background.jpg);
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #eb3535;
+  margin-bottom: 2rem;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.testimonial-card {
+  background: #1a1a1a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(11, 222, 245, 0.678);
+  max-width: 700px;
+  margin: 0 auto;
+  transition: transform 0.4s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.quote-icon {
+  font-size: 1.2rem;
+  color: #e63946;
+}
+
+.client-name,
+.client-role {
+  margin: 0.3rem 0;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.stars {
+  margin-top: 0.5rem;
+  color: #ffc107;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #222;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.nav-button:hover {
+  background: #ebdc0f;
+}
+
+.nav-prev {
+  left: 10px;
+}
+
+.nav-next {
+  right: 10px;
+}
+
+.dots {
+  margin-top: 1rem;
+}
+
+.dots span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots span.active {
+  background-color: #e63946;
+}
+
+.show-toggle {
+  display: block;
+  color: #1f8afc;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: 1rem;
+  }
+}

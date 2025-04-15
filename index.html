@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Testimonials Slider</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<section class="testimonials">
+  <h2><i class="fas fa-handshake"></i> What Our Clients Say</h2>
+
+  <div class="slider-container">
+    <button class="nav-button nav-prev">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="slider-wrapper">
+
+      
+      <div class="testimonial">
+        <div class="testimonial-card">
+          <img class="avatar" src="asset/img1.png" alt="Aaravi Mehta" />
+          <div class="content">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"The service was outstanding. Our brand visibility increased drastically after their intervention."</p>
+            <p class="client-name"><i class="fas fa-user"></i> – Aaravi Mehta</p>
+            <p class="client-role"><i class="fas fa-briefcase"></i> Founder, Mehta Tech Pvt. Ltd.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-card">
+          <img class="avatar" src="asset/img2.png" alt="jay Bhatt"/>
+          <div class="content">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <span class="short-text">Alex's strategic mindset has been instrumental in steering our company toward success...</span>
+            <span class="full-text hidden">
+              Alex's strategic mindset has been instrumental in steering our company toward success. His insights and leadership skills are second to none. Under his direction, our team has achieved goals we thought were years away. Not only is he professional, but he's also incredibly approachable, making him a favorite among the staff.
+            </span>
+            <span class="show-toggle" onclick="toggleShowMore(this)">Show More</span>
+            <p class="client-name"><i class="fas fa-user"></i> – Maya Bhatt</p>
+            <p class="client-role"><i class="fas fa-briefcase"></i> Founder, Mehta Tech Pvt. Ltd.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-card">
+          <img class="avatar" src="asset/img3.png" alt="Priyanshi Sharma" />
+          <div class="content">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"Their creative solutions and professionalism truly helped our brand stand out in a competitive market."</p>
+            <p class="client-name"><i class="fas fa-user"></i> – Priyansh Sharma</p>
+            <p class="client-role"><i class="fas fa-briefcase"></i> Creative Director, Prism AdWorks</p>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-card">
+          <img class="avatar" src="asset/img4.png" alt="Rohi Verma" />
+          <div class="content">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"The design team was exceptionally efficient. Our eCommerce website has never looked better."</p>
+            <p class="client-name"><i class="fas fa-user"></i> – Rohi Verma</p>
+            <p class="client-role"><i class="fas fa-briefcase"></i> Head of Digital, FlipMedia</p>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-card">
+          <img class="avatar" src="asset/img5.png" alt="Sneha Kapoor" />
+          <div class="content">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"Very responsive team and great quality output. It was a smooth journey from planning to delivery."</p>
+            <p class="client-name"><i class="fas fa-user"></i> – Sneha Kapoor</p>
+            <p class="client-role"><i class="fas fa-briefcase"></i> Marketing Lead, AgroGreen India</p>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-card">
+          <img class="avatar" src="asset/img6.png" alt="Viha Singh" />
+          <div class="content">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"Thanks to the team, our mobile app saw a 30% boost in downloads in just two weeks."</p>
+            <p class="client-name"><i class="fas fa-user"></i> – Viha Singh</p>
+            <p class="client-role"><i class="fas fa-briefcase"></i> Product Manager, AppNova</p>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> 
+    <button class="nav-button nav-next">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+  <div class="dots" id="dots"></div>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
